@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<meta name="description" content="Sudheer Kumar - Data Analyst skilled in Python, SQL, Power BI, Tableau, Machine Learning and Data Analytics.">
+
+<title>Sudheer Kumar | Data Analyst</title>
+
+<style>
+
+:root{
+--bg:#f6f8fb;
+--card:#ffffff;
+--text:#0f1b2a;
+--muted:#5a6878;
+--line:#e2e8f0;
+--accent:#0d9488;
+--accent2:#2563eb;
+--soft:#e6f5f3;
+--hero:linear-gradient(135deg,#0f172a,#134e4a);
+--herotext:#f1f5f9;
+}
+
+@media(prefers-color-scheme:dark){
+
+:root:not([data-theme="light"]){
+
+--bg:#0b1118;
+--card:#131b25;
+--text:#e8eef5;
+--muted:#93a1b1;
+--line:#243040;
+--accent:#5eead4;
+--accent2:#7aa7ff;
+--soft:#10302d;
+--hero:linear-gradient(135deg,#0b1118,#0f2e2b);
+
+}
+
+}
+
+:root[data-theme="dark"]{
+--bg:#0b1118;
+--card:#131b25;
+--text:#e8eef5;
+--muted:#93a1b1;
+--line:#243040;
+--accent:#5eead4;
+--accent2:#7aa7ff;
+--soft:#10302d;
+--hero:linear-gradient(135deg,#0b1118,#0f2e2b);
+}
+
+html{
+scroll-behavior:smooth;
+scroll-padding-top:70px;
+}
+
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+background:var(--bg);
+color:var(--text);
+font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+.mono{
+font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+
+.w{
+max-width:940px;
+margin:0 auto;
+padding:0 20px;
+}
+
+nav{
+position:sticky;
+top:0;
+z-index:9;
+background:color-mix(in srgb,var(--bg) 88%,transparent);
+backdrop-filter:blur(8px);
+border-bottom:1px solid var(--line);
+}
+
+nav .w{
+display:flex;
+align-items:center;
+gap:18px;
+height:56px;
+overflow-x:auto;
+}
+
+nav a{
+color:var(--muted);
+text-decoration:none;
+font-size:14px;
+white-space:nowrap;
+}
+
+nav a:hover{
+color:var(--accent);
+}
+
+nav .sp{
+flex:1;
+}
+
+#tg{
+background:none;
+border:1px solid var(--line);
+color:var(--text);
+border-radius:8px;
+padding:5px 10px;
+cursor:pointer;
+font-size:14px;
+}
+
+.hero{
+background:var(--hero);
+color:var(--herotext);
+}
+
+.hero .w{
+padding-top:64px;
+padding-bottom:56px;
+}
+
+.pill{
+display:inline-flex;
+align-items:center;
+gap:8px;
+font-size:13px;
+padding:5px 12px;
+border-radius:999px;
+background:rgba(94,234,212,.14);
+color:#5eead4;
+}
+
+.dot{
+width:8px;
+height:8px;
+border-radius:50%;
+background:#5eead4;
+animation:p 2s infinite;
+}
+
+@keyframes p{
+
+70%{
+box-shadow:0 0 0 8px rgba(94,234,212,0);
+}
+
+100%{
+box-shadow:0 0 0 0 rgba(94,234,212,0);
+}
+
+}
+
+h1{
+font-size:clamp(34px,7vw,58px);
+line-height:1.1;
+margin:18px 0 12px;
+letter-spacing:-.02em;
+}
+
+h1 em{
+font-style:normal;
+color:#5eead4;
+}
+
+.lead{
+font-size:18px;
+color:#cbd5e1;
+max-width:640px;
+margin:0 0 26px;
+}
+
+.btns{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:11px 20px;
+border-radius:10px;
+font-weight:600;
+font-size:15px;
+text-decoration:none;
+border:1px solid #5eead4;
+transition:transform .15s;
+display:inline-block;
+}
+
+.btn:hover{
+transform:translateY(-2px);
+}
+
+.btn.p{
+background:#5eead4;
+color:#0f172a;
+}
+
+.btn.s{
+color:#5eead4;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:12px;
+margin-top:36px;
+}
+
+.stat{
+border:1px solid rgba(255,255,255,.14);
+border-radius:14px;
+padding:16px;
+background:rgba(255,255,255,.05);
+}
+
+.stat b{
+display:block;
+font-size:30px;
+color:#5eead4;
+}
+
+.stat span{
+font-size:13px;
+color:#cbd5e1;
+}
+
+section{
+padding:44px 0 8px;
+}
+
+.k{
+color:var(--accent);
+font-size:13px;
+letter-spacing:.08em;
+text-transform:uppercase;
+}
+
+h2{
+font-size:28px;
+margin:4px 0 20px;
+letter-spacing:-.01em;
+}
+
+.card{
+background:var(--card);
+border:1px solid var(--line);
+border-radius:14px;
+padding:22px;
+margin-bottom:16px;
+transition:box-shadow .2s,transform .2s;
+}
+
+.card:hover{
+box-shadow:0 8px 24px rgba(0,0,0,.08);
+transform:translateY(-2px);
+}
+
+.card h3{
+margin:0;
+font-size:19px;
+}
+
+.meta{
+color:var(--muted);
+font-size:14px;
+margin:2px 0 14px;
+}
+
+.cs{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:14px;
+}
+
+.cs div{
+border-left:3px solid var(--accent);
+padding-left:12px;
+}
+
+.cs h4{
+margin:0 0 4px;
+font-size:12px;
+text-transform:uppercase;
+letter-spacing:.08em;
+color:var(--accent);
+}
+
+.cs p{
+margin:0;
+font-size:15px;
+color:var(--muted);
+}
+
+.chips{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+margin-top:16px;
+}
+
+.chip{
+background:var(--soft);
+color:var(--accent);
+font-size:13px;
+padding:3px 10px;
+border-radius:6px;
+}
+
+.steps{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+gap:12px;
+counter-reset:s;
+}
+
+.step{
+background:var(--card);
+border:1px solid var(--line);
+border-radius:14px;
+padding:16px;
+counter-increment:s;
+}
+
+.step:before{
+content:"0" counter(s);
+color:var(--accent);
+font-family:ui-monospace,Menlo,monospace;
+font-size:13px;
+}
+
+.step b{
+display:block;
+margin:4px 0;
+}
+
+.step span{
+color:var(--muted);
+font-size:14px;
+}
+
+.tabs{
+display:flex;
+gap:8px;
+flex-wrap:wrap;
+margin-bottom:14px;
+}
+
+.tab{
+background:var(--card);
+border:1px solid var(--line);
+color:var(--text);
+padding:7px 14px;
+border-radius:999px;
+cursor:pointer;
+font-size:14px;
+}
+
+.tab[aria-pressed="true"]{
+background:var(--accent);
+color:var(--bg);
+border-color:var(--accent);
+}
+
+.sk{
+display:none;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:12px;
+}
+
+.sk.on{
+display:grid;
+}
+
+.sk div{
+background:var(--card);
+border:1px solid var(--line);
+border-radius:12px;
+padding:14px;
+font-size:15px;
+}
+
+.certs{
+list-style:none;
+margin:0;
+padding:0;
+display:grid;
+gap:8px;
+}
+
+.certs li{
+background:var(--card);
+border:1px solid var(--line);
+border-radius:10px;
+padding:11px 14px;
+display:flex;
+justify-content:space-between;
+gap:12px;
+flex-wrap:wrap;
+}
+
+.certs span{
+color:var(--muted);
+font-size:14px;
+}
+
+.cta{
+background:var(--hero);
+color:var(--herotext);
+border-radius:18px;
+padding:36px 24px;
+text-align:center;
+margin:28px 0;
+}
+
+.cta p{
+color:#cbd5e1;
+margin:0 0 20px;
+}
+
+footer{
+color:var(--muted);
+font-size:14px;
+text-align:center;
+padding:12px 0 40px;
+}
+
+.rv{
+opacity:0;
+transform:translateY(16px);
+transition:opacity .6s,transform .6s;
+}
+
+.rv.in{
+opacity:1;
+transform:none;
+}
+
+@media(prefers-reduced-motion:reduce){
+
+.rv{
+opacity:1;
+transform:none;
+transition:none;
+}
+
+.dot{
+animation:none;
+}
+
+html{
+scroll-behavior:auto;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<div class="w">
+
+<a href="#work">Work</a>
+<a href="#process">Process</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#certs">Certifications</a>
+<a href="#contact">Contact</a>
+
+<span class="sp"></span>
+
+<button id="tg" aria-label="Toggle theme">
+Theme
+</button>
+
+</div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<div class="hero">
+
+<div class="w">
+
+<span class="pill mono">
+<i class="dot"></i>
+Available for entry-level data analyst roles
+</span>
+
+<h1>
+I turn messy data into <em>decisions</em> people can act on.
+</h1>
+
+<p class="lead">
+
+Sudheer Kumar, B.Tech CSE (Data Science) 2026.
+SQL, Python, Power BI and Tableau, with a testing mindset
+and applied machine learning on top.
+
+</p>
+
+<div class="btns">
+
+<a class="btn p" href="#contact">
+Hire me
+</a>
+
+<a class="btn s" href="#work">
+See my work
+</a>
+
+</div>
+
+
+<div class="stats">
+
+<div class="stat">
+<b data-n="500" data-s="k+">0</b>
+<span>transaction rows analyzed</span>
+</div>
+
+<div class="stat">
+<b data-n="12">0</b>
+<span>KPI visuals built in Power BI</span>
+</div>
+
+<div class="stat">
+<b data-n="18" data-s="%">0</b>
+<span>data accuracy improvement</span>
+</div>
+
+<div class="stat">
+<b data-n="97.56" data-s="%" data-d="2">0</b>
+<span>validation accuracy, CNN project</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="w">
+
+
+<!-- EXPERIENCE -->
+
+<section id="work" class="rv">
+
+<div class="k mono">
+Experience
+</div>
+
+<h2>
+Selected Work
+</h2>
+
+
+<div class="card">
+
+<h3>
+Data Analytics Intern, Accenture: Social Buzz Case
+</h3>
+
+<div class="meta">
+
+Online simulation &middot;
+Jan 2024 &ndash; Mar 2024 &middot;
+Client: Social Buzz, a social media platform &middot;
+6-member team
+
+</div>
+
+
+<div class="cs">
+
+<div>
+
+<h4>Problem</h4>
+
+<p>
+
+Social Buzz was posting 100,000+ pieces of content a day
+and needed to know which content categories were most popular,
+plus an audit of its data practices and advice for an IPO.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h4>What I did</h4>
+
+<p>
+
+Worked through data understanding, cleaning, modelling,
+analysis and insights, using Python and Power BI to rank
+content categories by aggregate popularity and building
+12 KPI visuals.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h4>Outcome</h4>
+
+<p>
+
+Ran regression checks before each release and did root-cause
+analysis with the team, improving data accuracy by 18%,
+then documented findings for handoff.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="chips">
+
+<span class="chip">Python</span>
+<span class="chip">Power BI</span>
+<span class="chip">KPI Design</span>
+<span class="chip">Content Analysis</span>
+<span class="chip">Regression Checks</span>
+<span class="chip">Documentation</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section id="process" class="rv">
+
+<div class="k mono">
+Approach
+</div>
+
+<h2>
+How I Work
+</h2>
+
+
+<div class="steps">
+
+<div class="step">
+
+<b>Scope</b>
+
+<span>
+Clarify the question and the KPIs that answer it.
+</span>
+
+</div>
+
+
+<div class="step">
+
+<b>Prepare</b>
+
+<span>
+Clean and validate data with SQL and Python.
+</span>
+
+</div>
+
+
+<div class="step">
+
+<b>Analyze</b>
+
+<span>
+Find trends and root causes, not just totals.
+</span>
+
+</div>
+
+
+<div class="step">
+
+<b>Visualize</b>
+
+<span>
+Build dashboards in Power BI or Tableau.
+</span>
+
+</div>
+
+
+<div class="step">
+
+<b>Test &amp; Document</b>
+
+<span>
+Check results, then write it up for handoff.
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills" class="rv">
+
+<div class="k mono">
+Toolkit
+</div>
+
+<h2>
+Skills
+</h2>
+
+
+<div class="tabs" id="tabs">
+
+<button class="tab"
+aria-pressed="true"
+data-t="a">
+Analysis
+</button>
+
+<button class="tab"
+aria-pressed="false"
+data-t="v">
+Visualization
+</button>
+
+<button class="tab"
+aria-pressed="false"
+data-t="m">
+Machine Learning
+</button>
+
+<button class="tab"
+aria-pressed="false"
+data-t="e">
+Engineering
+</button>
+
+</div>
+
+
+<div class="sk on" id="a">
+
+<div>SQL</div>
+<div>Python</div>
+<div>Pandas &amp; NumPy</div>
+<div>ETL Workflows</div>
+<div>Data Cleaning &amp; Preparation</div>
+
+</div>
+
+
+<div class="sk" id="v">
+
+<div>Power BI</div>
+<div>Tableau</div>
+<div>KPI Dashboards</div>
+<div>Stakeholder-ready Documentation</div>
+
+</div>
+
+
+<div class="sk" id="m">
+
+<div>Scikit-Learn</div>
+<div>TensorFlow &amp; CNN</div>
+<div>OpenCV</div>
+<div>Model Training &amp; Evaluation</div>
+
+</div>
+
+
+<div class="sk" id="e">
+
+<div>Git</div>
+<div>Unit Testing &amp; Debugging</div>
+<div>SDLC</div>
+<div>Jupyter Notebook &amp; VS Code</div>
+
+</div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects" class="rv">
+
+<div class="k mono">
+Projects
+</div>
+
+<h2>
+Applied ML Projects
+</h2>
+
+
+<!-- SIGN LANGUAGE PROJECT -->
+
+<div class="card">
+
+<h3>
+Smart Real-Time Indian Sign Language Translation
+</h3>
+
+<div class="meta">
+
+Team Project &middot;
+Jan 2026 &ndash; Apr 2026
+
+</div>
+
+
+<p>
+
+A real-time Indian Sign Language translation system
+developed as a team project using deep learning and
+computer vision.
+
+</p>
+
+
+<div class="cs">
+
+<div>
+
+<h4>Goal</h4>
+
+<p>
+
+Translate Indian Sign Language in real time using
+a complete data-to-output pipeline.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h4>Approach</h4>
+
+<p>
+
+Python pipeline involving preprocessing,
+feature extraction, CNN training and inference.
+Changes tracked with Git.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h4>Result</h4>
+
+<p>
+
+97.56% validation accuracy through iterative
+testing and evaluation.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="chips">
+
+<span class="chip">Python</span>
+<span class="chip">TensorFlow</span>
+<span class="chip">CNN</span>
+<span class="chip">OpenCV</span>
+<span class="chip">Computer Vision</span>
+
+</div>
+
+
+<div class="btns" style="margin-top:18px">
+
+<a class="btn s"
+href="https://github.com/Vishnupriya16802/DualModeSignLanguage"
+target="_blank"
+rel="noopener noreferrer">
+
+View GitHub Project
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- EMOTION PROJECT -->
+
+<div class="card">
+
+<h3>
+Emotion-Based Music Recommendation System
+</h3>
+
+<div class="meta">
+
+Personal Project &middot;
+Aug 2024 &ndash; Oct 2024
+
+</div>
+
+
+<div class="cs">
+
+<div>
+
+<h4>Goal</h4>
+
+<p>
+
+Recommend music from a viewer's facial emotion.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h4>Approach</h4>
+
+<p>
+
+Real-time computer vision using CNN and Haar Cascade
+feeding a recommendation engine and UI.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h4>Result</h4>
+
+<p>
+
+A working end-to-end application, built and tested
+module by module with Git.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="chips">
+
+<span class="chip">Python</span>
+<span class="chip">CNN</span>
+<span class="chip">Haar Cascade</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CERTIFICATIONS -->
+
+<section id="certs" class="rv">
+
+<div class="k mono">
+Learning
+</div>
+
+<h2>
+Certifications
+</h2>
+
+
+<ul class="certs">
+
+<li>
+
+Google Data Analytics
+
+<span>
+Google &middot; 2023
+</span>
+
+</li>
+
+
+<li>
+
+Data Analytics and Visualization
+
+<span>
+Accenture &middot; 2024
+</span>
+
+</li>
+
+
+<li>
+
+Data Analysis with Python
+
+<span>
+IBM &middot; 2024
+</span>
+
+</li>
+
+
+<li>
+
+Cloud Computing
+
+<span>
+NPTEL &middot; 2025
+</span>
+
+</li>
+
+
+<li>
+
+Cybersecurity in the AI Economy
+
+<span>
+Microsoft Elevate &middot; Grade A+ &middot; Aug 2026
+</span>
+
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="rv">
+
+<div class="cta">
+
+<h2 style="margin-top:0">
+Let's Work Together
+</h2>
+
+<p>
+
+Open to data analyst roles in Hyderabad and Bengaluru,
+and to remote work.
+
+</p>
+
+
+<div class="btns" style="justify-content:center">
+
+<a class="btn p"
+href="mailto:pathipatisudheerkumar@gmail.com">
+
+Email Me
+
+</a>
+
+
+<a class="btn s"
+href="https://linkedin.com/in/pathipatisudheerkumar"
+target="_blank"
+rel="noopener noreferrer">
+
+LinkedIn
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+&copy; 2026 Pathipati Sudheer Kumar
+
+</footer>
+
+</div>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+(function(){
+
+var root=document.documentElement;
+
+
+/* THEME */
+
+try{
+
+var t=localStorage.getItem('theme');
+
+if(t){
+root.setAttribute('data-theme',t);
+}
+
+}catch(e){}
+
+
+document.getElementById('tg').onclick=function(){
+
+var dark=
+root.getAttribute('data-theme')==='dark'||
+(!root.getAttribute('data-theme') &&
+matchMedia('(prefers-color-scheme: dark)').matches);
+
+var n=dark?'light':'dark';
+
+root.setAttribute('data-theme',n);
+
+try{
+localStorage.setItem('theme',n);
+}catch(e){}
+
+};
+
+
+/* SKILLS TABS */
+
+document.querySelectorAll('.tab').forEach(function(b){
+
+b.onclick=function(){
+
+document.querySelectorAll('.tab').forEach(function(x){
+
+x.setAttribute(
+'aria-pressed',
+x===b
+);
+
+});
+
+
+document.querySelectorAll('.sk').forEach(function(s){
+
+s.classList.toggle(
+'on',
+s.id===b.dataset.t
+);
+
+});
+
+};
+
+});
+
+
+/* NUMBER ANIMATION */
+
+var reduce=
+matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+
+function count(el){
+
+var n=parseFloat(el.dataset.n);
+
+var s=el.dataset.s||'';
+
+var d=+el.dataset.d||0;
+
+
+if(reduce){
+
+el.textContent=
+n.toFixed(d)+s;
+
+return;
+
+}
+
+
+var st=null;
+
+
+(function f(ts){
+
+st=st||ts;
+
+var p=Math.min(
+(ts-st)/1200,
+1
+);
+
+
+el.textContent=
+(n*(1-Math.pow(1-p,3))).toFixed(d)+s;
+
+
+if(p<1){
+
+requestAnimationFrame(f);
+
+}
+
+})(performance.now());
+
+}
+
+
+/* SCROLL ANIMATION */
+
+var io=new IntersectionObserver(
+
+function(es){
+
+es.forEach(function(e){
+
+if(e.isIntersecting){
+
+e.target.classList.add('in');
+
+io.unobserve(e.target);
+
+}
+
+});
+
+},
+
+{
+threshold:.12
+}
+
+);
+
+
+document.querySelectorAll('.rv')
+.forEach(function(e){
+
+io.observe(e);
+
+});
+
+
+/* COUNTERS */
+
+document.querySelectorAll('[data-n]')
+.forEach(count);
+
+
+})();
+
+</script>
+
+</body>
+</html>
